@@ -1,0 +1,33 @@
+# Node.js dependencies for both backend and frontend
+node_modules/
+
+# Environment files
+**/.env
+**/.env.local
+
+# Logs
+**/logs
+**/*.log
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# OS-specific
+.idea/
+.vscode/
+
+# Build output (if you build frontend)
+frontend/dist/
+
+# Optional: If you generate coverage reports
+**/coverage/
+
+# npm debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional lockfiles
+pnpm-lock.yaml
+yarn.lock
