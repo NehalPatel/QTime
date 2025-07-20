@@ -35,6 +35,7 @@ const examRoutes = require('./routes/exam');
 const questionRoutes = require('./routes/question');
 const studentRoutes = require('./routes/student');
 const leaderboardRoutes = require('./routes/leaderboard');
+const userRoutes = require('./routes/user');
 
 // Use routes
 app.use('/api/admin', adminRoutes);
@@ -42,6 +43,7 @@ app.use('/api/exams', examRoutes);
 app.use('/api/questions', questionRoutes);
 app.use('/api/students', studentRoutes);
 app.use('/api/leaderboard', leaderboardRoutes);
+app.use('/api/users', userRoutes);
 
 // Basic route
 app.get('/', (req, res) => {

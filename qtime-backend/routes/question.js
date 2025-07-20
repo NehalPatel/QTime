@@ -46,7 +46,6 @@ router.post('/', authenticateToken, async (req, res) => {
         const question = new Question({ text, options, correct_option, exam_id });
         await question.save();
 
-
         // Add question to exam's questions array
         await Exam.findByIdAndUpdate(
             exam_id,
